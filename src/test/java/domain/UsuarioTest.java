@@ -4,18 +4,30 @@
  */
 package domain;
 
-/**
- * Clase: UsuarioTest
- * Proyecto: Ni Idea Materia: Taller de Investigación I
- * Docente: Francisco Javier Montecillo Pueste 
- * Programador: Leslye Hernández Jiménez
- * Fecha: 02/10/2025
- */
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Clase: UsuarioTest
+ * Proyecto: Ni Idea 
+ * Materia: Taller de Investigación I
+ * Docente: Francisco Javier Montecillo Pueste 
+ * Programador: Leslye Hernández Jiménez
+ * Fecha: 02/10/2025
+ *
+ * <p>Esta clase contiene las pruebas unitarias para la clase
+ * {@link Usuario}, verificando el correcto funcionamiento de
+ * sus constructores, getters y setters. Los ejemplos de prueba
+ * simulan usuarios relacionados con la gestión de proyectos de
+ * ciberseguridad y redes.</p>
+ */
 public class UsuarioTest {
 
+    /**
+     * Prueba unitaria que verifica el correcto funcionamiento
+     * del constructor con parámetros y de los métodos getters
+     * de la clase {@link Usuario}.
+     */
     @Test
     public void testConstructorConParametros() {
         Usuario u = new Usuario(1, "Leslye", "Leslye@mail.com");
@@ -24,6 +36,10 @@ public class UsuarioTest {
         assertEquals("Leslye@mail.com", u.getCorreo());
     }
 
+    /**
+     * Prueba unitaria que verifica el correcto funcionamiento
+     * de los métodos setters de la clase {@link Usuario}.
+     */
     @Test
     public void testSetters() {
         Usuario u = new Usuario();
@@ -36,4 +52,3 @@ public class UsuarioTest {
         assertEquals("carlos@mail.com", u.getCorreo());
     }
 }
-

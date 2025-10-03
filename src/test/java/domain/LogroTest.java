@@ -4,36 +4,51 @@
  */
 package domain;
 
-/**
- * Clase: LogroTest 
- * Proyecto: Ni Idea Materia: Taller de Investigación I
- * Docente: Francisco Javier Montecillo Pueste 
- * Programador: Leslye Hernández Jiménez
- * Fecha: 02/10/2025
- */
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Clase: LogroTest
+ * Proyecto: Ni Idea 
+ * Materia: Taller de Investigación I
+ * Docente: Francisco Javier Montecillo Pueste 
+ * Programador: Leslye Hernández Jiménez
+ * Fecha: 02/10/2025
+ *
+ * <p>Esta clase contiene las pruebas unitarias para la clase
+ * {@link Logro}, verificando el correcto funcionamiento de sus
+ * constructores, getters y setters. Los ejemplos de prueba están
+ * relacionados con cursos de ciberseguridad y redes.</p>
+ */
 public class LogroTest {
 
+    /**
+     * Prueba unitaria que verifica el correcto funcionamiento
+     * del constructor con parámetros y de los métodos getters
+     * de la clase {@link Logro}.
+     */
     @Test
     public void testConstructorAndGetters() {
-        Logro logro = new Logro(1, "Académico", "Primer lugar en matemáticas");
+        Logro logro = new Logro(1, "Ciberseguridad", "Certificación en Ethical Hacking");
 
         assertEquals(1, logro.getId());
-        assertEquals("Académico", logro.getCategoria());
-        assertEquals("Primer lugar en matemáticas", logro.getDescripcion());
+        assertEquals("Ciberseguridad", logro.getCategoria());
+        assertEquals("Certificación en Ethical Hacking", logro.getDescripcion());
     }
 
+    /**
+     * Prueba unitaria que verifica el correcto funcionamiento
+     * de los métodos setters de la clase {@link Logro}.
+     */
     @Test
     public void testSetters() {
         Logro logro = new Logro();
         logro.setId(2);
-        logro.setCategoria("Deportivo");
-        logro.setDescripcion("Medalla de oro en fútbol");
+        logro.setCategoria("Redes");
+        logro.setDescripcion("Curso avanzado en Configuración de Redes Cisco");
 
         assertEquals(2, logro.getId());
-        assertEquals("Deportivo", logro.getCategoria());
-        assertEquals("Medalla de oro en fútbol", logro.getDescripcion());
+        assertEquals("Redes", logro.getCategoria());
+        assertEquals("Curso avanzado en Configuración de Redes Cisco", logro.getDescripcion());
     }
 }
