@@ -16,8 +16,7 @@ Gestión de Dependencias	Maven	Usado para gestionar JUnit.
 Pruebas	JUnit 5 (Plataforma Jupiter)	Validación de pruebas unitarias.
 Persistencia	Serialización de Objetos	Almacenamiento local en archivos .bin.
 
-Exportar a Hojas de cálculo
-Modelo de Clases
+💻3. Modelo de Clases
 La arquitectura se diseñó con UML. La clase central es Portafolio, la cual actúa como un contenedor para un Alumno y una lista dinámica de Logros (evidencias).
 
 Clase	Propósito
