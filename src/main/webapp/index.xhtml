@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+<h:head>
+    <title>NiIdea - Inicio</title>
+    <link rel="stylesheet" href="resources/css/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+</h:head>
+
+<h:body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-logo">
+            <h:graphicImage library="img" name="logo.png" styleClass="logo" alt="Logo NiIdea"/>
+        </div>
+        <div class="navbar-menu">
+            <p:button value="Inicio" styleClass="ui-button-flat ui-button-text-white"/>
+            <p:button value="Proyectos" styleClass="ui-button-flat ui-button-text-white"/>
+            <p:button value="Contacto" styleClass="ui-button-flat ui-button-text-white"/>
+        </div>
+    </div>
+
+    <!-- Sección principal -->
+    <div class="hero">
+        <h1>Bienvenido a NiIdea</h1>
+        <p>Un espacio para gestionar tus ideas, proyectos y reportes con facilidad.</p>
+        <p:button value="Explorar" icon="pi pi-arrow-right" styleClass="ui-button-raised ui-button-primary"/>
+    </div>
+
+    <!-- Cards con PrimeFaces -->
+    <div class="card-container">
+        <p:card styleClass="custom-card" header="Gestión de Proyectos">
+            <h:graphicImage library="img" name="gestion.png" styleClass="card-img" alt="Gestion"/>
+            <p>Administra tus proyectos de forma intuitiva y visual.</p>
+            <p:button value="Ver más" icon="pi pi-folder-open" styleClass="ui-button-outlined ui-button-primary"/>
+        </p:card>
+
+        <p:card styleClass="custom-card" header="Reportes">
+            <h:graphicImage library="img" name="reporte.png" styleClass="card-img" alt="Reporte"/>
+            <p>Genera y organiza reportes con un solo clic.</p>
+            <p:button value="Ver más" icon="pi pi-file" styleClass="ui-button-outlined ui-button-primary"/>
+        </p:card>
+
+        <p:card styleClass="custom-card" header="Usuarios">
+            <h:graphicImage library="img" name="usuarios.png" styleClass="card-img" alt="Usuarios"/>
+            <p>Administra tu perfil y tu equipo fácilmente.</p>
+            <p:button value="Ver más" icon="pi pi-users" styleClass="ui-button-outlined ui-button-primary"/>
+        </p:card>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 NiIdea. Todos los derechos reservados.
+            <br></br>
+        Proyecto académico desarrollado con Jakarta EE y PrimeFaces</p>
+    </footer>
+
+</h:body>
+</html>
